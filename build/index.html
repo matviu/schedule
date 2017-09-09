@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="css/styles.min.css">
+
+  <script src="js/main.js" defer></script>
+
+  <title>Расписание</title>
+</head>
+<body>
+
+  <section class="schedule">
+    <h1 class="schedule__title">Доклады</h1>
+
+    <section class="schedule__settings">
+      <fieldset class="schedule__fieldset lectors-filter">
+        <legend>Лекторы</legend>
+        <label>
+          <input type="checkbox" name="prokopyk" checked>
+          Прокопюк Андрей
+        </label>
+        <label>
+          <input type="checkbox" name="macukov" checked>
+          Эдуард Мацуков
+        </label>
+        <label>
+          <input type="checkbox" name="grigoriev" checked>
+          Роман Григорьев
+        </label>
+        <label>
+          <input type="checkbox" name="ten" checked>
+          Антон Тен
+        </label>
+        <label>
+          <input type="checkbox" name="dushkin" checked>
+          Дмитрий Душкин
+        </label>
+        <label>
+          <input type="checkbox" name="vasiliev" checked>
+          Максим Васильев
+        </label>
+      </fieldset>
+
+      <fieldset class="schedule__fieldset dates-filter">
+        <legend>Даты</legend>
+        <label>
+          <input type="checkbox" name="interface">
+          Школа разработки интерфейсов
+        </label>
+        <label>
+          <input type="checkbox" name="mobile">
+          Школа мобильной разработки
+        </label>
+        <label>
+          <input type="checkbox" name="design">
+          Школа мобильного дизайна
+        </label>
+      </fieldset>
+      <fieldset class="schedule__fieldset schools-filter">
+        <legend>Школы</legend>
+        <label>
+          <input type="checkbox" name="interface">
+          Школа разработки интерфейсов
+        </label>
+        <label>
+          <input type="checkbox" name="mobile">
+          Школа мобильной разработки
+        </label>
+        <label>
+          <input type="checkbox" name="design">
+          Школа мобильного дизайна
+        </label>
+      </fieldset>
+    </section>
+
+    <table class="schedule__table">
+      <tr class="schedule__top">
+        <td class="schedule__cell">Школа</td>
+        <td class="schedule__cell">Тема лекции</td>
+        <td class="schedule__cell">Лектор</td>
+        <td class="schedule__cell">Дата и время проведения</td>
+        <td class="schedule__cell">Место проведения</td>
+        <td class="schedule__cell">Ссылка на материалы</td>
+      </tr>
+
+      <tr class="schedule__item  schedule__item--complited schedule__item--show">
+        <td class="schedule__cell schedule__cell--school">Школа мобильного дизайна</td>
+        <td class="schedule__cell">Лекция 1. Идея, исследование, концепт (Часть 1)</td>
+        <td class="schedule__cell schedule__cell--lector schedule__cell--lector-ten">
+          Антон Тен<span class="lector-info">Яндекс</span>
+        </td>
+        <td class="schedule__cell schedule__cell--date">
+          <time datetime="2016-10-18 17:00">18 октября 2016 17:00</time>
+          <span class="schedule__complete-mark">лекция завершена</span>
+        </td>
+        <td class="schedule__cell">аудитория №31</td>
+        <td class="schedule__cell">
+          <a href="#" class="schedule__material-link">материалы</a>
+        </td>
+      </tr>
+
+      <tr class="schedule__item schedule__item--show">
+        <td class="schedule__cell schedule__cell--school">Школа мобильного дизайна</td>
+        <td class="schedule__cell">Лекция 2. Идея, исследование, концепт (Часть 2)</td>
+        <td class="schedule__cell schedule__cell--lector schedule__cell--lector-ten">Антон Тен<span class="lector-info">Яндекс</span></td>
+        <td class="schedule__cell schedule__cell--date">
+          <time datetime="2016-10-18 19:00">18 октября 2016 19:00</time>
+          <span class="schedule__complete-mark">лекция завершена</span>
+        </td>
+        <td class="schedule__cell">аудитория №31</td>
+        <td class="schedule__cell">
+          <a href="#" class="schedule__material-link">материалы</a>
+        </td>
+      </tr>
+
+      <tr class="schedule__item schedule__item--show">
+        <td class="schedule__cell schedule__cell--school">Школа мобильной разработки</td>
+        <td class="schedule__cell">Лекция 1. Java Blitz(Часть 1)</td>
+        <td class="schedule__cell schedule__cell--lector schedule__cell--lector-macukov">Эдуард Мацуков<span class="lector-info">Яндекс</span></td>
+        <td class="schedule__cell schedule__cell--date">
+          <time datetime="2016-10-19 17:00">19 октября 2016 17:00</time>
+          <span class="schedule__complete-mark">лекция завершена</span>
+        </td>
+        <td class="schedule__cell">аудитория №23</td>
+        <td class="schedule__cell">
+          <a href="#" class="schedule__material-link">материалы</a>
+        </td>
+      </tr>
+
+      <tr class="schedule__item schedule__item--show">
+        <td class="schedule__cell  schedule__cell--school">Школа мобильной разработки</td>
+        <td class="schedule__cell">Лекция 2. Git &amp; Workflow</td>
+        <td class="schedule__cell schedule__cell--lector schedule__cell--lector-prokopyk">Прокопюк Андрей<span class="lector-info">Яндекс</span></td>
+        <td class="schedule__cell schedule__cell--date">
+          <time datetime="2016-10-19 19:00">19 октября 2016 19:00</time>
+          <span class="schedule__complete-mark">лекция завершена</span>
+        </td>
+        <td class="schedule__cell">аудитория №23</td>
+        <td class="schedule__cell">
+          <a href="#" class="schedule__material-link">материалы</a>
+        </td>
+      </tr>
+
+      <tr class="schedule__item schedule__item--show">
+        <td class="schedule__cell schedule__cell--school">Школа разработки интерфейсов</td>
+        <td class="schedule__cell">Лекция 1. Адаптивная вёрстка</td>
+        <td class="schedule__cell schedule__cell--lector schedule__cell--lector-dushkin">
+          Дмитрий Душкин<span class="lector-info">Яндекс</span>
+        </td>
+        <td class="schedule__cell schedule__cell--date">
+          <time datetime="2016-10-20 17:00">20 октября 2016 17:00</time>
+          <span class="schedule__complete-mark">лекция завершена</span>
+        </td>
+        <td class="schedule__cell">аудитория №26</td>
+        <td class="schedule__cell">
+          <a href="#" class="schedule__material-link">материалы</a>
+        </td>
+      </tr>
+
+      <tr class="schedule__item schedule__item--show">
+        <td class="schedule__cell schedule__cell--school">Школа разработки интерфейсов</td>
+        <td class="schedule__cell">	Лекция 2. Работа с сенсорным пользовательским вводом</td>
+        <td class="schedule__cell schedule__cell--lector schedule__cell--lector-dushkin">
+          Дмитрий Душкин<span class="lector-info">Яндекс</span>
+        </td>
+        <td class="schedule__cell  schedule__date">
+          <time datetime="2016-10-27 17:00">27 октября 2016 17:00</time>
+          <span class="schedule__complete-mark">лекция завершена</span>
+        </td>
+        <td class="schedule__cell">аудитория №26</td>
+        <td class="schedule__cell">
+          <a href="#" class="schedule__material-link">материалы</a>
+        </td>
+      </tr>
+
+      <tr class="schedule__item schedule__item--show">
+        <td class="schedule__cell schedule__cell--school">Школа мобильной разработки</td>
+        <td class="schedule__cell">Лекция 3. Java Blitz (Часть 2)</td>
+        <td class="schedule__cell schedule__cell--lector schedule__cell--lector-macukov">Эдуард Мацуков<span class="lector-info">Яндекс</span></td>
+        <td class="schedule__cell schedule__cell--date">
+          <time datetime="2016-11-02 17:00">02 ноября 2016 17:00</time>
+          <span class="schedule__complete-mark">лекция завершена</span>
+        </td>
+        <td class="schedule__cell">аудитория №26</td>
+        <td class="schedule__cell">
+          <a href="#" class="schedule__material-link">материалы</a>
+        </td>
+      </tr>
+
+      <tr class="schedule__item schedule__item--show">
+        <td class="schedule__cell schedule__cell--school">Школа разработки интерфейсов</td>
+        <td class="schedule__cell">Лекция 3. Мультимедиа: возможности браузера</td>
+        <td class="schedule__cell schedule__cell--lector schedule__cell--lector-vasiliev">
+          Максим Васильев<span class="lector-info">Яндекс</span>
+        </td>
+        <td class="schedule__cell  schedule__date">
+          <time datetime="2016-11-03 17:00">03 ноября 2016 17:00</time>
+          <span class="schedule__complete-mark">лекция завершена</span>
+        </td>
+        <td class="schedule__cell">аудитория №26</td>
+        <td class="schedule__cell">
+          <a href="#" class="schedule__material-link">материалы</a>
+        </td>
+      </tr>
+
+      <tr class="schedule__item schedule__item--show">
+        <td class="schedule__cell schedule__cell--school">Все школы</td>
+        <td class="schedule__cell">Инфраструктура веб-проектов</td>
+        <td class="schedule__cell schedule__cell--lector schedule__cell--lector-prokopyk">Прокопюк Андрей<span class="lector-info">Яндекс</span></td>
+        <td class="schedule__cell schedule__cell--date">
+          <time datetime="2016-11-15 17:00">15 ноября 2016 17:00</time>
+          <span class="schedule__complete-mark">лекция завершена</span>
+        </td>
+        <td class="schedule__cell">аудитория №25</td>
+        <td class="schedule__cell">
+          <a href="#" class="schedule__material-link">материалы</a>
+        </td>
+      </tr>
+
+      <tr class="schedule__item schedule__item--show">
+        <td class="schedule__cell schedule__cell--school">Школа разработки интерфейсов</td>
+        <td class="schedule__cell">Лекция 4. Нативные приложения на веб-технологиях</td>
+        <td class="schedule__cell schedule__cell--lector schedule__cell--lector-vasiliev">
+          Максим Васильев<span class="lector-info">Яндекс</span>
+        </td>
+        <td class="schedule__cell schedule__cell--date">
+          <time datetime="2016-12-01 17:00">01 декабря 2016 17:00</time>
+          <span class="schedule__complete-mark">лекция завершена</span>
+        </td>
+        <td class="schedule__cell">аудитория №26</td>
+        <td class="schedule__cell">
+          <a href="#" class="schedule__material-link">материалы</a>
+        </td>
+      </tr>
+
+      <tr class="schedule__item schedule__item--show">
+        <td class="schedule__cell schedule__cell--school">Все школы</td>
+        <td class="schedule__cell">Работа в команде</td>
+        <td class="schedule__cell schedule__cell--lector schedule__cell--lector-macukov">
+          Эдуард Мацуков<span class="lector-info">Яндекс</span>
+        </td>
+        <td class="schedule__cell schedule__cell--date">
+          <time datetime="2016-12-05 17:00">05 декабря 2016 17:00</time>
+          <span class="schedule__complete-mark">лекция завершена</span>
+        </td>
+        <td class="schedule__cell">аудитория №31</td>
+        <td class="schedule__cell">
+          <a href="#" class="schedule__material-link">материалы</a>
+        </td>
+      </tr>
+
+      <tr class="schedule__item schedule__item--show">
+        <td class="schedule__cell schedule__cell--school">Школа мобильного дизайна</td>
+        <td class="schedule__cell">Лекция 4. Продукт и платформа</td>
+        <td class="schedule__cell schedule__cell--lector schedule__cell--lector-grigoriev">
+          Роман Григорьев<span class="lector-info">Яндекс</span>
+        </td>
+        <td class="schedule__cell schedule__cell--date">
+          <time datetime="2016-12-06 17:00">06 декабря 2016 17:00</time>
+          <span class="schedule__complete-mark">лекция завершена</span>
+        </td>
+        <td class="schedule__cell">аудитория №26</td>
+        <td class="schedule__cell">
+          <a href="#" class="schedule__material-link">материалы</a>
+        </td>
+      </tr>
+
+      <tr class="schedule__item schedule__item--show">
+        <td class="schedule__cell schedule__cell--school">Школа мобильной разработки</td>
+        <td class="schedule__cell">MyFirstApp (Часть 1)</td>
+        <td class="schedule__cell schedule__cell--lector schedule__cell--lector-grigoriev">
+          Роман Григорьев<span class="lector-info">Яндекс</span>
+        </td>
+        <td class="schedule__cell schedule__cell--date">
+          <time datetime="2016-12-07 17:00">07 декабря 2016 17:00</time>
+          <span class="schedule__complete-mark">лекция завершена</span>
+        </td>
+        <td class="schedule__cell">аудитория №20</td>
+        <td class="schedule__cell">
+          <a href="#" class="schedule__material-link">материалы</a>
+        </td>
+      </tr>
+
+    </table>
+  </section>
+
+</body>
+</html>

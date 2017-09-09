@@ -1,0 +1,89 @@
+.schedule__title {
+  text-transform: uppercase;
+}
+
+.schedule__table {
+  border-collapse: collapse;
+}
+
+.schedule__top {
+  text-align: center;
+  background-color: #2d89ef;
+  color: #ffffff;
+  & .schedule__cell {
+    border: none;
+  }
+}
+
+.schedule__item {
+  display: none;
+
+  &--show {
+    display: table-row;
+  }
+
+  &--complited {
+
+    background-color: #dddddd;
+    color: #b4b4b4;
+
+    & .schedule__complete-mark {
+      display: block;
+      font-weight: bold;
+      color: #000000;
+      text-align: center;
+    }
+
+    & .schedule__material-link {
+      display: block;
+    }
+  }
+}
+
+.schedule__cell {
+  padding: 5px 10px;
+  border: 1px solid #dddddd;
+
+  &--lector {
+    position: relative;
+    cursor: pointer
+  }
+}
+
+.schedule__cell--lector:hover .lector-info {
+  position: absolute;
+  z-index: 1;
+
+  display: block;
+  padding: 10px;
+
+  background-color: #ffffff;
+  border: 1px solid black;
+  border-radius: 5px;
+
+  color: #000000;
+}
+
+.lector-info {
+  display: none;
+}
+
+.schedule__complete-mark {
+  display: none;
+}
+
+.schedule__material-link {
+  display: none;
+  padding: 5px 10px;
+
+  color: #000000;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+
+  &:hover {
+    background-color: #aeaeae;
+    color: #ffffff;
+  }
+}

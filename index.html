@@ -17,64 +17,15 @@
     <h1 class="schedule__title">Доклады</h1>
 
     <section class="schedule__settings">
-      <fieldset class="schedule__fieldset lectors-filter">
-        <legend>Лекторы</legend>
-        <label>
-          <input type="checkbox" name="prokopyk" checked>
-          Прокопюк Андрей
-        </label>
-        <label>
-          <input type="checkbox" name="macukov" checked>
-          Эдуард Мацуков
-        </label>
-        <label>
-          <input type="checkbox" name="grigoriev" checked>
-          Роман Григорьев
-        </label>
-        <label>
-          <input type="checkbox" name="ten" checked>
-          Антон Тен
-        </label>
-        <label>
-          <input type="checkbox" name="dushkin" checked>
-          Дмитрий Душкин
-        </label>
-        <label>
-          <input type="checkbox" name="vasiliev" checked>
-          Максим Васильев
-        </label>
-      </fieldset>
-
-      <fieldset class="schedule__fieldset dates-filter">
-        <legend>Даты</legend>
-        <label>
-          <input type="checkbox" name="interface">
-          Школа разработки интерфейсов
-        </label>
-        <label>
-          <input type="checkbox" name="mobile">
-          Школа мобильной разработки
-        </label>
-        <label>
-          <input type="checkbox" name="design">
-          Школа мобильного дизайна
-        </label>
-      </fieldset>
-      <fieldset class="schedule__fieldset schools-filter">
-        <legend>Школы</legend>
-        <label>
-          <input type="checkbox" name="interface">
-          Школа разработки интерфейсов
-        </label>
-        <label>
-          <input type="checkbox" name="mobile">
-          Школа мобильной разработки
-        </label>
-        <label>
-          <input type="checkbox" name="design">
-          Школа мобильного дизайна
-        </label>
-      </fieldset>
+      <div class="lectors-filter">
+        <h2>фильтрация по лекторам</h2>
+          <span class="prokopyk">Прокопюк Андрей</span>
+          <span class="macukov">Эдуард Мацуков</span>
+          <span class="grigoriev">Роман Григорьев</span>
+          <span class="ten">Антон Тен</span>
+          <span class="dushkin">Дмитрий Душкин</span>
+          <span class="vasiliev">Максим Васильев</span>
+      </div>
     </section>
 
     <table class="schedule__table">
@@ -88,7 +39,7 @@
       </tr>
 
       <tr class="schedule__item  schedule__item--complited schedule__item--show">
-        <td class="schedule__cell schedule__cell--school">Школа мобильного дизайна</td>
+        <td class="schedule__cell schedule__cell--design-school">Школа мобильного дизайна</td>
         <td class="schedule__cell">Лекция 1. Идея, исследование, концепт (Часть 1)</td>
         <td class="schedule__cell schedule__cell--lector schedule__cell--lector-ten">
           Антон Тен<span class="lector-info">Яндекс</span>
@@ -104,7 +55,7 @@
       </tr>
 
       <tr class="schedule__item schedule__item--show">
-        <td class="schedule__cell schedule__cell--school">Школа мобильного дизайна</td>
+        <td class="schedule__cell schedule__cell--design-school">Школа мобильного дизайна</td>
         <td class="schedule__cell">Лекция 2. Идея, исследование, концепт (Часть 2)</td>
         <td class="schedule__cell schedule__cell--lector schedule__cell--lector-ten">Антон Тен<span class="lector-info">Яндекс</span></td>
         <td class="schedule__cell schedule__cell--date">
@@ -118,7 +69,7 @@
       </tr>
 
       <tr class="schedule__item schedule__item--show">
-        <td class="schedule__cell schedule__cell--school">Школа мобильной разработки</td>
+        <td class="schedule__cell schedule__cell--mobile-school">Школа мобильной разработки</td>
         <td class="schedule__cell">Лекция 1. Java Blitz(Часть 1)</td>
         <td class="schedule__cell schedule__cell--lector schedule__cell--lector-macukov">Эдуард Мацуков<span class="lector-info">Яндекс</span></td>
         <td class="schedule__cell schedule__cell--date">
@@ -132,7 +83,7 @@
       </tr>
 
       <tr class="schedule__item schedule__item--show">
-        <td class="schedule__cell  schedule__cell--school">Школа мобильной разработки</td>
+        <td class="schedule__cell  schedule__cell--mobile-school">Школа мобильной разработки</td>
         <td class="schedule__cell">Лекция 2. Git &amp; Workflow</td>
         <td class="schedule__cell schedule__cell--lector schedule__cell--lector-prokopyk">Прокопюк Андрей<span class="lector-info">Яндекс</span></td>
         <td class="schedule__cell schedule__cell--date">
@@ -146,7 +97,7 @@
       </tr>
 
       <tr class="schedule__item schedule__item--show">
-        <td class="schedule__cell schedule__cell--school">Школа разработки интерфейсов</td>
+        <td class="schedule__cell schedule__cell--interface-school">Школа разработки интерфейсов</td>
         <td class="schedule__cell">Лекция 1. Адаптивная вёрстка</td>
         <td class="schedule__cell schedule__cell--lector schedule__cell--lector-dushkin">
           Дмитрий Душкин<span class="lector-info">Яндекс</span>
@@ -162,7 +113,7 @@
       </tr>
 
       <tr class="schedule__item schedule__item--show">
-        <td class="schedule__cell schedule__cell--school">Школа разработки интерфейсов</td>
+        <td class="schedule__cell schedule__cell--interface-school">Школа разработки интерфейсов</td>
         <td class="schedule__cell">	Лекция 2. Работа с сенсорным пользовательским вводом</td>
         <td class="schedule__cell schedule__cell--lector schedule__cell--lector-dushkin">
           Дмитрий Душкин<span class="lector-info">Яндекс</span>
@@ -178,7 +129,7 @@
       </tr>
 
       <tr class="schedule__item schedule__item--show">
-        <td class="schedule__cell schedule__cell--school">Школа мобильной разработки</td>
+        <td class="schedule__cell schedule__cell--mobile-school">Школа мобильной разработки</td>
         <td class="schedule__cell">Лекция 3. Java Blitz (Часть 2)</td>
         <td class="schedule__cell schedule__cell--lector schedule__cell--lector-macukov">Эдуард Мацуков<span class="lector-info">Яндекс</span></td>
         <td class="schedule__cell schedule__cell--date">
@@ -192,7 +143,7 @@
       </tr>
 
       <tr class="schedule__item schedule__item--show">
-        <td class="schedule__cell schedule__cell--school">Школа разработки интерфейсов</td>
+        <td class="schedule__cell schedule__cell--interface-school">Школа разработки интерфейсов</td>
         <td class="schedule__cell">Лекция 3. Мультимедиа: возможности браузера</td>
         <td class="schedule__cell schedule__cell--lector schedule__cell--lector-vasiliev">
           Максим Васильев<span class="lector-info">Яндекс</span>
@@ -208,7 +159,7 @@
       </tr>
 
       <tr class="schedule__item schedule__item--show">
-        <td class="schedule__cell schedule__cell--school">Все школы</td>
+        <td class="schedule__cell schedule__cell--all-school">Все школы</td>
         <td class="schedule__cell">Инфраструктура веб-проектов</td>
         <td class="schedule__cell schedule__cell--lector schedule__cell--lector-prokopyk">Прокопюк Андрей<span class="lector-info">Яндекс</span></td>
         <td class="schedule__cell schedule__cell--date">
@@ -222,7 +173,7 @@
       </tr>
 
       <tr class="schedule__item schedule__item--show">
-        <td class="schedule__cell schedule__cell--school">Школа разработки интерфейсов</td>
+        <td class="schedule__cell schedule__cell--interface-school">Школа разработки интерфейсов</td>
         <td class="schedule__cell">Лекция 4. Нативные приложения на веб-технологиях</td>
         <td class="schedule__cell schedule__cell--lector schedule__cell--lector-vasiliev">
           Максим Васильев<span class="lector-info">Яндекс</span>
@@ -238,7 +189,7 @@
       </tr>
 
       <tr class="schedule__item schedule__item--show">
-        <td class="schedule__cell schedule__cell--school">Все школы</td>
+        <td class="schedule__cell schedule__cell--all-school">Все школы</td>
         <td class="schedule__cell">Работа в команде</td>
         <td class="schedule__cell schedule__cell--lector schedule__cell--lector-macukov">
           Эдуард Мацуков<span class="lector-info">Яндекс</span>
@@ -254,7 +205,7 @@
       </tr>
 
       <tr class="schedule__item schedule__item--show">
-        <td class="schedule__cell schedule__cell--school">Школа мобильного дизайна</td>
+        <td class="schedule__cell schedule__cell--design-school">Школа мобильного дизайна</td>
         <td class="schedule__cell">Лекция 4. Продукт и платформа</td>
         <td class="schedule__cell schedule__cell--lector schedule__cell--lector-grigoriev">
           Роман Григорьев<span class="lector-info">Яндекс</span>
@@ -270,7 +221,7 @@
       </tr>
 
       <tr class="schedule__item schedule__item--show">
-        <td class="schedule__cell schedule__cell--school">Школа мобильной разработки</td>
+        <td class="schedule__cell schedule__cell--mobile-school">Школа мобильной разработки</td>
         <td class="schedule__cell">MyFirstApp (Часть 1)</td>
         <td class="schedule__cell schedule__cell--lector schedule__cell--lector-grigoriev">
           Роман Григорьев<span class="lector-info">Яндекс</span>

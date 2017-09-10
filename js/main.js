@@ -2,17 +2,15 @@
 
 (function(){
 
-  var prokopyk = document.querySelector('[name="prokopyk"]');
-  var macukov = document.querySelector('[name="macukov"]');
-  var grigoriev = document.querySelector('[name="grigoriev"]');
-  var ten = document.querySelector('[name="ten"]');
-  var grigiriev = document.querySelector('[name="grigiriev"]');
-  var dushkin = document.querySelector('[name="dushkin"]');
-  var vasiliev = document.querySelector('[name="vasiliev"]');
+  var prokopyk = document.querySelector('.prokopyk');
+  var macukov = document.querySelector('.macukov');
+  var grigoriev = document.querySelector('.grigoriev');
+  var ten = document.querySelector('.ten');
+  var grigiriev = document.querySelector('.grigiriev');
+  var dushkin = document.querySelector('.dushkin');
+  var vasiliev = document.querySelector('.vasiliev');
 
   var items = document.querySelectorAll('.schedule__item');
-
-  console.log()
 
   ten.onclick = function() {
     var checkedCells = document.querySelectorAll('.schedule__cell--lector-ten')
@@ -20,6 +18,8 @@
     for (var j = 0; j < checkedCells.length; j++) {
       checkedCells[j].parentNode.classList.toggle('schedule__item--show')
     }
+
+    this.classList.toggle('disabled');
   }
 
   prokopyk.onclick = function() {
@@ -28,6 +28,8 @@
     for (var j = 0; j < checkedCells.length; j++) {
       checkedCells[j].parentNode.classList.toggle('schedule__item--show')
     }
+
+    this.classList.toggle('disabled');
   }
 
   macukov.onclick = function() {
@@ -36,6 +38,8 @@
     for (var j = 0; j < checkedCells.length; j++) {
       checkedCells[j].parentNode.classList.toggle('schedule__item--show')
     }
+
+    this.classList.toggle('disabled');
   }
 
   grigoriev.onclick = function() {
@@ -44,6 +48,8 @@
     for (var j = 0; j < checkedCells.length; j++) {
       checkedCells[j].parentNode.classList.toggle('schedule__item--show')
     }
+
+    this.classList.toggle('disabled');
   }
 
   dushkin.onclick = function() {
@@ -52,6 +58,8 @@
     for (var j = 0; j < checkedCells.length; j++) {
       checkedCells[j].parentNode.classList.toggle('schedule__item--show')
     }
+
+    this.classList.toggle('disabled');
   }
 
   vasiliev.onclick = function() {
@@ -60,8 +68,8 @@
     for (var j = 0; j < checkedCells.length; j++) {
       checkedCells[j].parentNode.classList.toggle('schedule__item--show')
     }
+
+    this.classList.toggle('disabled');
   }
-
-
 
 })();

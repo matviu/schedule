@@ -2,14 +2,17 @@
   text-transform: uppercase; }
 
 .schedule__table {
-  border-collapse: collapse; }
+  border-collapse: collapse;
+  width: 100%; }
 
 .schedule__top {
   text-align: center;
   background-color: #2d89ef;
-  color: #ffffff; }
+  color: #ffffff;
+  font-weight: bold; }
   .schedule__top .schedule__cell {
-    border: none; }
+    border: none;
+    min-height: 50px; }
 
 .schedule__item {
   display: none; }
@@ -60,3 +63,19 @@
   .schedule__material-link:hover {
     background-color: #aeaeae;
     color: #ffffff; }
+
+.lectors-filter {
+  border: 1px solid #eaeaea;
+  padding: 10px; }
+  .lectors-filter h2 {
+    margin-top: 0;
+    text-transform: uppercase;
+    font-size: 20px; }
+  .lectors-filter span {
+    display: inline-block;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: bold; }
+    .lectors-filter span.disabled {
+      color: #aeaeae;
+      text-decoration: line-through; }
